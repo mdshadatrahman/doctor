@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">731355948924-16c9pa819uao1nfckl4ih17n4neko1cm.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">731355948924</string>
+    <string name="google_api_key" translatable="false">AIzaSyAwutavLKfkvw2OcNi_-vxepPavvcTdADQ</string>
+    <string name="google_app_id" translatable="false">1:731355948924:android:92ebf5a1c190b9beab66f9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAwutavLKfkvw2OcNi_-vxepPavvcTdADQ</string>
+    <string name="google_storage_bucket" translatable="false">hospitalmanagement-9c0ba.appspot.com</string>
+    <string name="project_id" translatable="false">hospitalmanagement-9c0ba</string>
+</resources>
