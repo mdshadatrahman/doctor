@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:doctor_appointment_app/pages/videocalling.dart';
 import 'package:flutter/material.dart';
 
 class DocDetails  extends StatefulWidget {
@@ -32,7 +33,7 @@ class _DocDetailsState extends State<DocDetails> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: CircleAvatar(                      
-                      backgroundImage: NetworkImage(snapshot.data['pic']),
+                      backgroundImage: NetworkImage(snapshot.data['pic']), //this line is causing error most of the time. 
                       radius: 90,
                     ),
                   ),
@@ -330,7 +331,16 @@ class _DocDetailsState extends State<DocDetails> {
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
           floatingActionButton: FloatingActionButton.extended(
-            onPressed: (){},
+            onPressed: (){
+
+              Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => VideoCallingScreen(),
+        ),
+      );
+
+            },
             icon: Icon(Icons.video_call),
             label: Text('Call Now'),
             backgroundColor: Colors.green[600],

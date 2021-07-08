@@ -33,6 +33,8 @@ dependencies:
   firebase_auth: ^1.4.1
   fluttertoast: ^8.0.7
   firebase_database: ^7.1.1
+  agora_rtc_engine: ^4.0.2
+  permission_handler: ^8.1.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
