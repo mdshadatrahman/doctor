@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:doctor_appointment_app/pages/video.dart';
 import 'package:doctor_appointment_app/pages/videocalling.dart';
 import 'package:flutter/material.dart';
 
@@ -330,20 +331,21 @@ class _DocDetailsState extends State<DocDetails> {
             ),
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
-          floatingActionButton: FloatingActionButton.extended(
-            onPressed: (){
-
-              Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => VideoCallingScreen(),
-        ),
-      );
-
-            },
-            icon: Icon(Icons.video_call),
-            label: Text('Call Now'),
-            backgroundColor: Colors.green[600],
+          floatingActionButton: Padding(
+            padding: const EdgeInsets.all(14.0),
+            child: FloatingActionButton.extended(
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => VideoCallingSystem(),
+                  ),
+                );
+              },
+              icon: Icon(Icons.video_call),
+              label: Text('Call Now'),
+              backgroundColor: Colors.green[600],
+            ),
           ),
         );
       }
