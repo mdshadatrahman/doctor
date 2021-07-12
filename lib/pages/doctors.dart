@@ -20,12 +20,13 @@ class _DoctorsState extends State<Doctors> {
 
   @override
   Widget build(BuildContext context) {
-    printDataToConsol();
+    //printDataToConsol();
     return Scaffold(
       backgroundColor: Colors.grey[800],
       appBar: AppBar(
         backgroundColor: Colors.grey[700],
         title: Text('Doctors'),
+        centerTitle: true,
       ),
       body: testDoctorList(),
       
@@ -55,6 +56,7 @@ class _DoctorsState extends State<Doctors> {
                     leading: CircleAvatar(
                       radius: 20,
                       backgroundImage: NetworkImage(snapshot.data.docs[index].data()['pic']),
+                      backgroundColor: Colors.black,
                     ),
                     title: Container(
                       child: new Row(

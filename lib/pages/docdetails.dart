@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:doctor_appointment_app/pages/video.dart';
-import 'package:doctor_appointment_app/pages/videocalling.dart';
 import 'package:flutter/material.dart';
 
 class DocDetails  extends StatefulWidget {
@@ -12,8 +11,15 @@ class DocDetails  extends StatefulWidget {
 }
 
 class _DocDetailsState extends State<DocDetails> {
+
   @override
-  Widget build(BuildContext context) {
+  void initState(){
+    var profileImage = FirebaseFirestore.instance.collection('doctors').doc(widget.docId).snapshots();
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context){
     return StreamBuilder(
       stream: FirebaseFirestore.instance.collection('doctors').doc(widget.docId).snapshots(),
       builder: (context, snapshot){
@@ -35,6 +41,7 @@ class _DocDetailsState extends State<DocDetails> {
                     padding: const EdgeInsets.all(8.0),
                     child: CircleAvatar(                      
                       backgroundImage: NetworkImage(snapshot.data['pic']), //this line is causing error most of the time. 
+                      backgroundColor: Colors.black,
                       radius: 90,
                     ),
                   ),

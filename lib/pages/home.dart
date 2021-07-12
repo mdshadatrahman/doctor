@@ -49,14 +49,16 @@ class _AppointHomeState extends State<AppointHome> {
               ),
             ),
 
-        child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
-            child: Column(
-              children: [
-                homeElements(),
-              ],
+        child: Center(
+          child: SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
+              child: Column(
+                children: [
+                  homeElements(),
+                ],
+              ),
             ),
-          ),
+        ),
       ),
       );
   }

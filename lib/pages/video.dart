@@ -100,7 +100,7 @@ class _VideoCallingSystemState extends State<VideoCallingSystem> {
       return RtcRemoteView.SurfaceView(uid: _remoteUid,);
     } else {
       return Text(
-        'Please wait for the doctor to join',
+        'Please wait for the other person to join',
         textAlign: TextAlign.center,
       );
     }

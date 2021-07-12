@@ -8,6 +8,7 @@ MERGED from D:\Flutter\doctor_appointment_app-master\android\app\src\main\Androi
 MERGED from [:agora_rtc_engine] D:\Flutter\doctor_appointment_app-master\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:firebase_auth] D:\Flutter\doctor_appointment_app-master\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:fluttertoast] D:\Flutter\doctor_appointment_app-master\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] D:\Flutter\doctor_appointment_app-master\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:permission_handler] D:\Flutter\doctor_appointment_app-master\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_database] D:\Flutter\doctor_appointment_app-master\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:cloud_firestore] D:\Flutter\doctor_appointment_app-master\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
@@ -224,6 +225,8 @@ MERGED from [:firebase_auth] D:\Flutter\doctor_appointment_app-master\build\fire
 MERGED from [:firebase_auth] D:\Flutter\doctor_appointment_app-master\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] D:\Flutter\doctor_appointment_app-master\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] D:\Flutter\doctor_appointment_app-master\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] D:\Flutter\doctor_appointment_app-master\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] D:\Flutter\doctor_appointment_app-master\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler] D:\Flutter\doctor_appointment_app-master\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler] D:\Flutter\doctor_appointment_app-master\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_database] D:\Flutter\doctor_appointment_app-master\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
