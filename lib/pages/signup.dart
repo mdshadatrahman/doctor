@@ -18,11 +18,16 @@ class _SignUpPageState extends State<SignUpPage> {
   final TextEditingController _emailController = TextEditingController();
 
   final TextEditingController _passwordController = TextEditingController();
+
+  String dorpdownValue;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.grey[700],
         appBar: AppBar(
+          backgroundColor: Colors.grey[800],
           title: Text('Register'),
           centerTitle: true,
           actions: [
@@ -30,6 +35,9 @@ class _SignUpPageState extends State<SignUpPage> {
               onPressed: (){
                 Navigator.pop(context);
               }, 
+              style: ElevatedButton.styleFrom(
+                primary: Colors.grey[600],
+              ),
               child: Text('Sign in'),
             ),
           ],
@@ -41,38 +49,124 @@ class _SignUpPageState extends State<SignUpPage> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: TextFormField(
-                    enabled: false,
+                  child: TextFormField(      
+                    style: TextStyle(
+                      color: Colors.white,
+                      decorationColor: Colors.white
+                    ),
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: 'Full Name'
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.white
+                        )
+                      ),
+                      
+                      hintText: 'Full Name',
+                      hintStyle: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: TextFormField(
-                    enabled: false,
-                    keyboardType: TextInputType.number,
+                  child: TextFormField(      
+                    style: TextStyle(
+                      color: Colors.white,
+                      decorationColor: Colors.white
+                    ),   
+                    keyboardType: TextInputType.number,       
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.white
+                        )
+                      ),
                       hintText: 'Age',
+                      hintStyle: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: TextFormField(
-                    enabled: false,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors. white),
+                      ),
+                      child: DropdownButton<String>(
+                        value: dorpdownValue,
+                        style: TextStyle(color: Colors.black),
+                        items:<String>[
+                          'Male',
+                          'Female'
+                        ].map<DropdownMenuItem<String>>((String value){
+                          return DropdownMenuItem<String>(
+                            value: value,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(value),
+                            ),
+                          );
+                        }).toList(),
+                        hint: Text(
+                          'Select your gender',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        onChanged: (String value){
+                          setState(() {
+                            dorpdownValue = value;
+                          });
+                        },
+                      ),
+                    ),
+                  )
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: TextFormField(      
+                    style: TextStyle(
+                      color: Colors.white,
+                      decorationColor: Colors.white
+                    ),   
+                    keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: 'Address'
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.white
+                        )
+                      ),
+                      hintText: 'Address',
+                      hintStyle: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: TextFormField(      
+                    style: TextStyle(
+                      color: Colors.white,
+                      decorationColor: Colors.white
+                    ),
+                    keyboardType: TextInputType.number,       
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.white
+                        )
+                      ),
+                      hintText: 'Phone Number',
+                      hintStyle: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: TextFormField(
+                    style: TextStyle(
+                      color: Colors.white
+                    ),
                     controller: _emailController,
                     validator: (String value){
                       if(value.isEmpty){
@@ -82,7 +176,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     }, 
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Email'
+                      hintText: 'Email (Optional)',
+                      hintStyle: TextStyle(color: Colors.white),
                     ),
 
                   ),
@@ -90,6 +185,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: TextFormField(
+                    style: TextStyle(color: Colors.white),
                     validator: (String value){
                       if(value.isEmpty){
                         return 'Please enter a password';
@@ -100,23 +196,18 @@ class _SignUpPageState extends State<SignUpPage> {
                     obscureText: true,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Password'
+                      hintText: 'Password',
+                      hintStyle: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: TextFormField(
-                    enabled: false,
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: 'Confirm Password'
-                    ),
-                  ),
-                ),
+
                 Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.green
+                    ),
                     onPressed: () async{
                       authHandler.handleSignUp(_emailController.text, _passwordController.text)
                       .then((User user){

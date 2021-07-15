@@ -36,9 +36,16 @@ dependencies:
   agora_rtc_engine: ^4.0.2
   permission_handler: ^8.1.2
   shared_preferences: ^2.0.6
+  flutter_native_splash: ^1.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#42a5f5"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

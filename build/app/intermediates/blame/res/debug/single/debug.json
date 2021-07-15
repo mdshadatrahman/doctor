@@ -4,12 +4,16 @@
         "source": "C:\\Users\\shada\\.gradle\\caches\\transforms-2\\files-2.1\\a5b07fdbf41190fd9e0afaa3198e6947\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\shada\\.gradle\\caches\\transforms-2\\files-2.1\\a5b07fdbf41190fd9e0afaa3198e6947\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
+        "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
+        "source": "D:\\Flutter\\doctor_appointment_app-master\\android\\app\\src\\main\\res\\drawable\\background.png"
     },
     {
         "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
         "source": "C:\\Users\\shada\\.gradle\\caches\\transforms-2\\files-2.1\\9a955a6f44634a4401c6ba032bb904cd\\play-services-base-17.1.0\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\shada\\.gradle\\caches\\transforms-2\\files-2.1\\a5b07fdbf41190fd9e0afaa3198e6947\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
@@ -110,6 +114,10 @@
     {
         "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\shada\\.gradle\\caches\\transforms-2\\files-2.1\\9a955a6f44634a4401c6ba032bb904cd\\play-services-base-17.1.0\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_launch_background.xml.flat",
+        "source": "D:\\Flutter\\doctor_appointment_app-master\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
     },
     {
         "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
@@ -326,6 +334,10 @@
     {
         "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\shada\\.gradle\\caches\\transforms-2\\files-2.1\\9a955a6f44634a4401c6ba032bb904cd\\play-services-base-17.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_background.png.flat",
+        "source": "D:\\Flutter\\doctor_appointment_app-master\\android\\app\\src\\main\\res\\drawable-v21\\background.png"
     },
     {
         "merged": "D:\\Flutter\\doctor_appointment_app-master\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",

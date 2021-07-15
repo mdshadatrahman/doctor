@@ -32,8 +32,8 @@ class LoginWithEmailAndPassword extends StatelessWidget {
                 padding: const EdgeInsets.all(12.0),
                 child: TextFormField(
                   style: TextStyle(
-                  color: Colors.black,
-                  decorationColor: Colors.white,
+                    color: Colors.black,
+                    decorationColor: Colors.white,
                 ),
                   keyboardType: TextInputType.emailAddress,
                   controller: _emailController,
